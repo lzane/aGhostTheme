@@ -242,7 +242,7 @@ td {
 }
 h4 {
 	border-left: 4px solid #C7BFBF;
-    padding-left: 20px
+    padding-left: 10px
 }
 
 q,
@@ -283,12 +283,16 @@ body {
     height: 100%;
     min-height: 100%;
     background: #f2f2f2;
-    font-family: "Noto Sans", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	letter-spacing: 0.05rem;
+    font-family: "Noto Sans", Helvetica, "Helvetica Neue", Arial,"Microsoft YaHei", sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.8);
     overflow-y: scroll
+}
+h5 {
+    font-weight: 700;
 }
 #header {
     max-height: 100vh;
@@ -518,7 +522,7 @@ body {
 }
 #main #feed #loadmore a {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background: white;
     font-size: 14px;
     font-size: 1.4rem;
@@ -784,7 +788,7 @@ h3,
 h4 {
     margin-top: 30px;
     margin-bottom: 10px;
-    font-family: "Noto Sans", Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Noto Sans", Helvetica, "Helvetica Neue", Arial,"Microsoft YaHei", sans-serif;
     font-weight: bold;
     line-height: 1.2
 }
@@ -1191,7 +1195,7 @@ button:hover {
 .hljs-subst,
 .hljs-request,
 .hljs-status {
-    color: #333;
+    color: inherit;
     font-weight: bold
 }
 .hljs-number,
@@ -1209,8 +1213,7 @@ button:hover {
 .hljs-id,
 .coffeescript .hljs-params,
 .scss .hljs-preprocessor {
-    color: #900;
-    font-weight: bold
+    /*font-weight: bold*/
 }
 .javascript .hljs-title,
 .lisp .hljs-title,
