@@ -82,11 +82,13 @@
 .read-next-story h2 {
     margin-top: 1rem;
     color: #fff;
+	padding: 0px 2px;
 }
 
 .read-next-story p {
     margin: 0;
     color: rgba(255,255,255,0.8);
+	padding: 0px 3px;
 }
 
 /* Special styles for posts with no cover images */
@@ -437,7 +439,7 @@ h5 {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.55);
     width: 100%;
     height: 100%
 }
@@ -462,14 +464,14 @@ h5 {
 }
 #header .header-content .post-data,
 #header .header-content .tag-data {
-    color: gray;
+    color: #DBDBDB;
     font-size: 14px;
     font-size: 1.4rem;
     cursor: default
 }
 #header .header-content .post-data a,
 #header .header-content .tag-data a {
-    color: #8d8d8d;
+    color: #DBDBDB;
     border: 0
 }
 #header .header-content .post-data a:hover,
@@ -900,7 +902,7 @@ h5 {
         background-position: center
     }
     #header {
-        height: 700px
+        height: 600px
     }
     #header .header-content h1 {
         font-size: 55px;
@@ -1176,6 +1178,7 @@ button:hover {
     }
 }
 @media screen and (min-width: 550px) {
+	
     h1,
     .blog-title {
         font-size: 50px;
@@ -1278,6 +1281,14 @@ button:hover {
         margin-bottom: 40px
     }
 }
+
+@media screen and (min-width: 300px) and  (max-width: 500px) {
+	.read-next {
+		display: block;
+	}
+}
+
+
 @media screen and (min-width: 1400px) {
     img,
     q {
@@ -1515,3 +1526,4 @@ button:hover {
 .icon-menu:before {
     content: "\f609"
 }
+
