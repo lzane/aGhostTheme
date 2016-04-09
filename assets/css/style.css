@@ -1104,7 +1104,7 @@ img.full-loaded {
     left: 0 !important
 }
 code {
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: Consolas, Monaco, 'Microsoft YaHei', 'Andale Mono', 'Ubuntu Mono' , monospace;
     padding: 3px 6px;
     font-size: 15px;
     font-size: 1.5rem;

@@ -1,5 +1,6 @@
 {{!< default}}
 {{#post ~}}
+
 <header id="header" class="animated fadeIn"{{#if image}} style="background-image: url({{image}})"{{/if}}>
     <div class="header-background">
     <section class="blog-content">
@@ -11,7 +12,7 @@
         <h1 class="post-title animated fadeInUp">{{{title}}}</h1>
         <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="{{date format='X'}}" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='DD MMMM YYYY'}}">{{date published_at timeago='true'}}</time></span>
             {{#if tags}}<span class="tags animated fadeInUp"><i class="fa fa-tags"></i> {{tags prefix="" separator=", "}}</span>{{/if}}
-            {{#author}}<span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="{{url}}">{{name}}</a></span>{{/author}}</span>
+            {{#author}}<span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="{{url absolute="true"}}">{{name}}</a></span>{{/author}}</span>
     </section>
     </div>
 </header>
@@ -59,7 +60,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url absolute="true"}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -67,7 +68,7 @@ s.setAttribute('data-timestamp', +new Date());
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url absolute="true"}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
