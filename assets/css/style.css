@@ -1286,6 +1286,10 @@ button:hover {
 	.read-next {
 		display: block;
 	}
+	
+	#main {
+    padding: 10px;
+	}
 }
 
 

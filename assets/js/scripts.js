@@ -1,7 +1,7 @@
 /* /* global hljs, $, console */
 /* jshint browser: true */
 
-var siteurl = "http://qncdn.lzane.com" ; // Get url for blog (in case site is run under a sub-domain)
+var siteurl = "https://qncdnssl.lzane.com" ; // Get url for blog (in case site is run under a sub-domain)
 
 /******************
  * HIGHLIGHT CODE *
@@ -142,7 +142,7 @@ if($("#main").hasClass("archive")){
         // The maximum number of pages the current query can return.
         var max = parseInt(numbers[1]);
         // The link of the next page of posts.
-		var nextLink = "http://www.lzane.com/page/"+(pageNum+1);
+		var nextLink = "https://www.lzane.com/page/"+(pageNum+1);
         /**
          * Replace the traditional navigation with our own,
          * but only if there is at least one page of new posts to load.
@@ -179,7 +179,7 @@ if($("#main").hasClass("archive")){
                     // Change nextLink to next page
                     $("#feed").imagesLoaded(function(){
                         pageNum++;
-                        nextLink = "http://www.lzane.com/";
+                        nextLink = "https://www.lzane.com/";
                         nextLink += "page/"+(pageNum+1);
 
                         // Remove button if last page else move the button to end of #content
